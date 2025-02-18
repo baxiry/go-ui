@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive showcase of Go UI frameworks and libraries for web, mobile, and desktop development">
+    <meta name="keywords" content="Go, Golang, UI, Framework, Fyne, Wails, NuxUI, Cogent, Desktop Apps">
+<meta name="author" content="Zakaria Chahboun">
+    <title>Go UI Projects Showcase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .card-animate {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        .dark .dark\\:card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased transition-colors duration-200 ease-in-out bg-gray-50 dark:bg-gray-900">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white dark:bg-gray-800 shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-gray-800 dark:text-white">Go UI Projects</span>
+                </div>
+                <div class="flex items-center">
+                    <button id="themeToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-200">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-yellow-300 theme-toggle-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path class="sun hidden dark:block" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                            <path class="moon dark:hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-24 pb-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-500 to-teal-500 dark:from-blue-900 dark:to-teal-900">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
+                Go UI Projects Showcase
+            </h1>
+            <p class="mt-3 max-w-md mx-auto text-base text-gray-100 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                Discover the best UI frameworks and libraries for building beautiful applications with Go
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Fyne -->
+            <div class="card-animate bg-white dark:bg-gray-800 rounded-lg shadow-lg dark:card-shadow overflow-hidden transform hover:scale-105 transition-transform duration-200">
+                <img src="https://github.com/fyne-io.png?size=200" alt="Fyne Logo" class="w-full h-48 object-cover"/>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Fyne</h3>
+                    <p class="mt-2 text-gray-600 dark:text-gray-300">Cross-platform GUI toolkit designed for Go, focused on simplicity, performance and beauty.</p>
+                    <a href="https://fyne.io" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline">
+                        Learn More
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Wails -->
+            <div class="card-animate bg-white dark:bg-gray-800 rounded-lg shadow-lg dark:card-shadow overflow-hidden transform hover:scale-105 transition-transform duration-200">
+                <img src="https://github.com/wailsapp.png?size=200" alt="Wails Logo" class="w-full h-48 object-cover"/>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Wails</h3>
+                    <p class="mt-2 text-gray-600 dark:text-gray-300">Build desktop applications using Go and Web Technologies. Create native applications with Go and modern web frameworks.</p>
+                    <a href="https://wails.io" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline">
+                        Learn More
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- NuxUI -->
+            <div class="card-animate bg-white dark:bg-gray-800 rounded-lg shadow-lg dark:card-shadow overflow-hidden transform hover:scale-105 transition-transform duration-200">
+                <img src="https://github.com/nuxui.png?size=200" alt="NuxUI Logo" class="w-full h-48 object-cover"/>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">NuxUI</h3>
+                    <p class="mt-2 text-gray-600 dark:text-gray-300">Modern, efficient UI framework for Go, supporting cross-platform desktop and mobile applications with a native look and feel.</p>
+                    <a href="https://github.com/nuxui" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline">
+                        Learn More
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cogent -->
+            <div class="card-animate bg-white dark:bg-gray-800 rounded-lg shadow-lg dark:card-shadow overflow-hidden transform hover:scale-105 transition-transform duration-200">
+                <img src="https://github.com/cogentcore.png?size=200" alt="Cogent Logo" class="w-full h-48 object-cover"/>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Cogent</h3>
+                    <p class="mt-2 text-gray-600 dark:text-gray-300">A modern GUI toolkit for Go that enables building native cross-platform applications with a clean, declarative API.</p>
+                    <a href="https://github.com/cogentcore/cogent" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline">
+                        Learn More
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Gio -->
+            <div class="card-animate bg-white dark:bg-gray-800 rounded-lg shadow-lg dark:card-shadow overflow-hidden transform hover:scale-105 transition-transform duration-200">
+                <img src="https://github.com/gioui.png?size=200" alt="Gio Logo" class="w-full h-48 object-cover"/>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Gio</h3>
+                    <p class="mt-2 text-gray-600 dark:text-gray-300">Cross-platform GUI framework designed for creating portable, fast, and beautiful applications with Go.</p>
+                    <a href="https://gioui.org" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline">
+                        Learn More
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-gray-600 dark:text-gray-400">
+                Created with ❤️ for the Go community
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        // Check for saved theme preference, otherwise use system preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        } else {
+            html.classList.remove('dark');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+        });
+
+        // Intersection Observer for card animations
+        const cards = document.querySelectorAll('.card-animate');
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            },
+            {
+                threshold: 0.1
+            }
+        );
+
+        cards.forEach(card => {
+            card.style.opacity = '0';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
